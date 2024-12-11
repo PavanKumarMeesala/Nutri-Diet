@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+.gree-section {
+    margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box {
+    display:flex;
+    flex-direction: column;
+    margin-left: 30%;
+    padding-top: 25px;
+    font-family: "Montserrat", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+select {
+    background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+#gender-label {
+    margin-right: 10px; /* Adjust space between label and select box */
+    font-size: 14px; /* Optional: Adjust font size to match input placeholder text */
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-page
+{
+    background-image: url('pixelcut-export (1).png');/* Prevents the image from repeating */        
+    overflow: hidden;    
+    height: 100vh;
 }

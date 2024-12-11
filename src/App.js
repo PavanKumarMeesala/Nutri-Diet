@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Greet from './components/Greet.js';
+import Login from './components/Login.js';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './components/Dashboard.js';
+import BMI from './components/BMI.js';
+import DailyTracker from './components/DailyTracker.js';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <div className='Main'>
+                <Routes>
+                    <Route 
+                        path="/" 
+                        element={
+                            <div className='main-page'>
+                                <div className='greet-section'>
+                                    <Greet />
+                                </div>
+                                <div className="box">
+                                    <Login />
+                                </div>
+                            </div>
+                        } 
+                    /> 
+                    <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/bmi" element={<BMI />} />
+                    <Route path="/track" element={<DailyTracker />} />    
+                </Routes>
+            </div>
+        </Router>
+    );
 }
 
 export default App;

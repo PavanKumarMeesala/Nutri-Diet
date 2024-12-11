@@ -1,0 +1,15 @@
+.content
+{
+    color : white;
+    font-size : 20px;
+    margin-top : 4%;
+    margin-left : 40%;
+}
+
+.animated-text::after {
+    content: '|';
+    animation: blink 1s step-start infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}

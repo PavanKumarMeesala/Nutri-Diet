@@ -1,0 +1,62 @@
+/* Dashboard.css */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-image: url('Intro.jpg');
+  background-size: cover; /* Ensures the image covers the screen without stretching */
+  background-position: center; /* Centers the image on the screen */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+  
+  .sidebar {
+    width: 240px;
+    background-color: #1976d2;
+    color: white;
+    padding-top: 16px;
+  }
+  
+  .sidebar-title {
+    text-align: center;
+    margin-bottom: 16px;
+    
+  }
+  
+  .nav-list-item-icon {
+    color: white;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 24px;
+  }
+  
+  .app-bar {
+    background-color: #ffffff;
+    /* height: 100px; */
+    margin-top: 0;
+  }
+  
+  .dashboard-title {
+    margin-top: 16px;
+    text-align: center;
+    text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff;
+  }
+  
+  .subtitle
+  {
+    text-align: center;
+    text-shadow: 0 1px 0 #ffffff;
+  }
+  .card-container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 300px;
+  }
+  
+  .dashboard-card {
+    min-width: 275px;
+    flex: 1 1 calc(33.333% - 16px);
+    box-sizing: border-box;
+  }
+  
