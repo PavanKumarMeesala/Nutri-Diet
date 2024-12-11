@@ -37,7 +37,7 @@ function Login() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:8080/api/users/login", {
+            const response = await axios.post("http://nutri-diet-server-production.up.railway.app/api/users/login", {
                 email: formData.email,
                 password: formData.password,
             });
@@ -56,7 +56,7 @@ function Login() {
 
     const handleSignUp = async () => {
         try {
-            const response = await axios.post("http://localhost:8080/api/users/register", formData);
+            const response = await axios.post("http://nutri-diet-server-production.up.railway.app/api/users/register", formData);
             if (response.status === 200 || response.status === 201) {
                 setAlert({ open: true, type: "success", message: "Registration successful!" });
                 toggle(true);
